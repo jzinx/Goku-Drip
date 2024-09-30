@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="topo">
+        <h1>Minha Loja</h1>
+    </div>
+        <nav>
+            <ul>
+                <li><a href="topo">Home</a></li>
+                <li><a href="mainImage">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-details">
+            <div class="image-gallery">
+                <img id="mainImage" src="GokuDrip.jpg" alt="Produto" />
+                <div class="thumbnails">
+                    <img src="GokuDripVerde.jpg" alt="Imagem 1" onmouseover="changeImage('imagem1.jpg')">
+                    <img src="GokuDripVermelho.png" alt="Imagem 2" onmouseover="changeImage('imagem2.jpg')">
+                    <img src="GokuDripAzul.jpg" alt="Imagem 2" onmouseover="changeImage('imagem2.jpg')">
+                </div>
+            </div>
+            <div class="info">
+                <h2>Camisa Goku Drip</h2>
+                <p>Esta Camisa Vai Te Dar O Molejo</p>
+                <p class="price">Preço: R$ 99,90</p>
+
+                <label for="size">Tamanho:</label>
+                <select id="size">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                </select>
+
+                <label for="color">Cor:</label>
+                <select id="color">
+                    <option value="vermelho">Vermelho</option>
+                    <option value="azul">Azul</option>
+                    <option value="verde">Verde</option>
+                </select>
+
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <section class="comments">
+            <h3>Comentários dos Cliente</h3>
+            <div class="comment">
+                <img src="Comentario1.jpg" alt="Usuário 1" />
+                <p>Ótimo produto! Recomendo muito.</p>
+            </div>
+            <div class="comment">
+                <img src="GokuCareca.jfif" alt="Usuário 2" />
+                <p>Qualidade incrível, vale cada centavo!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <nav>
+        <ul>
+            <li><a href="topo">Home</a></li>
+            <li><a href="mainImage">Produtos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
